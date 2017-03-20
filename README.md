@@ -1,4 +1,7 @@
-##e-shop
+## e-shop
 
-- MEAN stack
-- Material design
+- `ECMAScript 6`
+- `Angular` 1.x Material
+- `Express.js` + `Node.js`
+- `MongoDB`
+- `Gulp`
