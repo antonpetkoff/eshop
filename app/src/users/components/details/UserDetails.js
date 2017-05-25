@@ -1,4 +1,4 @@
-import UserDetailsController from './UserDetailsController'
+import UserDetailsController from './UserDetailsController';
 
 export default {
   name : 'userDetails',

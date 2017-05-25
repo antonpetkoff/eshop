@@ -4,7 +4,7 @@
  * @param $mdSidenav
  * @constructor
  */
-function AppController(UsersDataService, $mdSidenav) {
+function AppController($scope, UsersDataService, $mdSidenav) {
   var self = this;
 
   self.selected     = null;
