@@ -41,4 +41,4 @@ function AppController($scope, UsersDataService, $mdSidenav) {
   }
 }
 
-export default [ 'UsersDataService', '$mdSidenav', AppController ];
+export default [ '$scope', 'UsersDataService', '$mdSidenav', AppController ];
