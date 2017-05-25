@@ -1,5 +1,6 @@
 # e-shop setup
-1) `npm install jspm live-server -g` to install global tools
+
+1) `sudo npm install jspm live-server -g` to install tools
 
 2) `jspm update` to install project dependencies
 
