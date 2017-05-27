@@ -1,5 +1,6 @@
 // Load libraries
 import angular from 'angular';
+import uiRouter from 'angular-ui-router';
 
 import 'angular-animate';
 import 'angular-aria';
@@ -7,8 +8,8 @@ import 'angular-material';
 
 import Users from 'src/users/Users';
 
-export default angular.module( 'eshop', [ 'ngMaterial', Users.name ] )
-  .config(($mdIconProvider, $mdThemingProvider) => {
+angular.module( 'eshop', [ 'ngMaterial', uiRouter, Users.name ] )
+  .config(($mdIconProvider, $mdThemingProvider, $stateProvider) => {
     // Register the user `avatar` icons
     $mdIconProvider
       .defaultIconSet("./assets/svg/avatars.svg", 128)
@@ -22,4 +23,25 @@ export default angular.module( 'eshop', [ 'ngMaterial', Users.name ] )
     $mdThemingProvider.theme('default')
       .primaryPalette('brown')
       .accentPalette('red');
+
+    var helloState = {
+      name: 'hello',
+      url: '/hello',
+      template: '<h3>hello world!</h3>'
+    };
+
+    var aboutState = {
+      name: 'about',
+      url: '/about',
+      template: '<h3>Its the UI-Router hello world app!</h3>'
+    };
+
+    $stateProvider
+      .state(helloState)
+      .state(aboutState)
+      .state({
+        name: 'home',
+        url: '/home',
+        component: 'esHome'
+      });
   });
