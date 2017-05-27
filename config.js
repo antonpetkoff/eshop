@@ -5,6 +5,7 @@ module.exports = {
   css: {
     src: [
       'node_modules/angular-material/angular-material.css',
+      'app/src/styles/**/*.css',
       'app/src/components/**/*.css'
     ],
     filename: 'app.css',
