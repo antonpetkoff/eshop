@@ -37,6 +37,6 @@ class HomeController {
 }
 
 angular.module('eshop').component('esHome', {
-  templateUrl: 'src/components/home/home.html',
+  templateUrl: 'templates/home/home.html',
   controller: HomeController
 });

@@ -1,38 +1,32 @@
-var config = require('./config');
-var gulp = require('gulp');
-var concat = require('gulp-concat');
-var del = require('del');
+const _ = require('lodash');
+const config = require('./config');
+const gulp = require('gulp');
+const concat = require('gulp-concat');
+const del = require('del');
 
-gulp.task('js', function() {
-  return gulp.src(config.js.src)
-    .pipe(concat(config.js.filename))
-    .pipe(gulp.dest(config.js.dest));
+const ITEMS = ['libs', 'js', 'css', 'index', 'templates', 'assets'];
+
+ITEMS.forEach(item => {
+  gulp.task(item, () => {
+    const filename = config[item].filename;
+    var stream = gulp.src(config[item].src);
+
+    if (filename) {
+      stream = stream.pipe(concat(filename));
+    }
+
+    return stream.pipe(gulp.dest(config[item].dest));
+  });
 });
 
-gulp.task('libs', function() {
-  return gulp.src(config.libs.src)
-    .pipe(concat(config.libs.filename))
-    .pipe(gulp.dest(config.libs.dest));
+gulp.task('clean', () => {
+  del.sync([config.buildDir]);
 });
 
-gulp.task('css', function() {
-  return gulp.src(config.css.src)
-    .pipe(concat(config.css.filename))
-    .pipe(gulp.dest(config.css.dest));
+gulp.task('watch', () => {
+  ITEMS.forEach(item => {
+    gulp.watch(config[item].src, [item]);
+  });
 });
 
-gulp.task('html', function() {
-  return gulp.src(config.html.src)
-    .pipe(gulp.dest(config.html.dest));
-})
-
-gulp.task('clean', function() {
-    del.sync([config.buildDir]);
-});
-
-gulp.task('watch', function() {
-  gulp.watch(config.js.src, ['js']);
-  gulp.watch(config.css.src, ['css']);
-});
-
-gulp.task('default', ['clean', 'libs', 'js', 'css', 'html', 'watch']);
+gulp.task('default', _.concat(['clean'], ITEMS, ['watch']));

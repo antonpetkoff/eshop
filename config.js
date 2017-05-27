@@ -17,9 +17,17 @@ module.exports = {
     filename: 'app.js',
     dest: 'build/js'
   },
-  html: {
+  index: {
     src: 'app/index.html',
     dest: 'build/'
+  },
+  templates: {
+    src: 'app/src/components/**/*.html',
+    dest: 'build/templates'
+  },
+  assets: {
+    src: 'app/assets',
+    dest: 'build/assets'
   },
   libs: {
     src: [
@@ -27,8 +35,8 @@ module.exports = {
       'node_modules/angular/angular.js',
       'node_modules/angular-animate/angular-animate.js',
       'node_modules/angular-aria/angular-aria.js',
-      'node_modules/angular-ui-router/release/angular-ui-router.js',
-      'node_modules/angular-material/angular-material.js'
+      'node_modules/angular-material/angular-material.js',
+      'node_modules/@uirouter/angularjs/release/angular-ui-router.js'
     ],
     dest: 'build/js',
     filename: 'libs.js'

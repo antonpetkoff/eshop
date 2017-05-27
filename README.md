@@ -1,10 +1,12 @@
 # e-shop setup
 
-1) `sudo npm install jspm live-server -g` to install tools
+1) `sudo npm install -g live-server gulp-cli` to install tools
 
-2) `num install` to install project dependencies
+2) `npm install` to install project dependencies
 
-3) `npm run start` to serve the application
+3) `npm run build` to build the application (**leave it working in the terminal**)
 
-4) `npm run lint` to check for linting errors
+4) `npm run start` to serve the application (**leave it working in the terminal**)
+
+5) `npm run lint` to check for linting errors
 
