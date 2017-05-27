@@ -1,4 +1,4 @@
-class UserDetailsController  {
+class UserDetailsController {
 
   /**
    * Constructor
@@ -20,7 +20,7 @@ class UserDetailsController  {
 
     $mdBottomSheet.show({
       parent: angular.element(document. getElementById('content')),
-      templateUrl: 'src/users/components/details/ContactSheet.html',
+      templateUrl: 'templates/contactSheet/contactSheet.html',
       controller: [ '$mdBottomSheet', UserSheetController],
       controllerAs: "$ctrl",
       bindToController : true
@@ -46,5 +46,11 @@ class UserDetailsController  {
   }
 
 }
-// export default UserDetailsController;
 
+angular.module('eshop').component('esUserDetails', {
+  bindings: {
+    selected: '<'
+  },
+  templateUrl: 'templates/userDetails/userDetails.html',
+  controller: UserDetailsController
+});
