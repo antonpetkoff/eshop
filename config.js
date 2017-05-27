@@ -26,7 +26,9 @@ module.exports = {
     dest: 'build/templates'
   },
   assets: {
-    src: 'app/assets',
+    src: [
+      'app/assets/**/*.{svg,png}'
+    ],
     dest: 'build/assets'
   },
   libs: {
