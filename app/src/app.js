@@ -1,14 +1,4 @@
-// Load libraries
-import angular from 'angular';
-import uiRouter from 'angular-ui-router';
-
-import 'angular-animate';
-import 'angular-aria';
-import 'angular-material';
-
-import Users from 'src/users/Users';
-
-angular.module( 'eshop', [ 'ngMaterial', uiRouter, Users.name ] )
+angular.module('eshop', ['ngMaterial', 'ui.router'])
   .config(($mdIconProvider, $mdThemingProvider, $stateProvider) => {
     // Register the user `avatar` icons
     $mdIconProvider

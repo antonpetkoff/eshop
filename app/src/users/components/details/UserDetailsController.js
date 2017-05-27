@@ -46,5 +46,5 @@ class UserDetailsController  {
   }
 
 }
-export default UserDetailsController;
+// export default UserDetailsController;
 

@@ -49,5 +49,5 @@ function UsersDataService($q) {
   };
 }
 
-export default ['$q', UsersDataService];
+// export default ['$q', UsersDataService];
 
