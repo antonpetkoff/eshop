@@ -11,8 +11,12 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
       .icon("phone", "./assets/svg/phone.svg", 24);
 
     $mdThemingProvider.theme('default')
-      .primaryPalette('brown')
-      .accentPalette('red');
+      .primaryPalette('blue', {
+        default: '900'
+      })
+      .accentPalette('blue')
+      .warnPalette('red')
+      .dark();
 
     $stateProvider
       .state({
