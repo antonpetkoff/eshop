@@ -11,10 +11,12 @@
   <link rel="stylesheet" href="css/app.css"/>
 </head>
 
-<body ng-cloak layout="column" ng-app="eshop">
-  <a ui-sref="hello">Hello</a>
-  <a ui-sref="about">About</a>
-  <a ui-sref="home">Home</a>
+<body ng-cloak layout="column" ng-app="eshop" ng-controller="AppController">
+  <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+    <md-nav-item md-nav-click="goto('login')" name="login" ui-sref="login">Login</md-nav-item>
+    <md-nav-item md-nav-click="goto('home')" name="home" ui-sref="home">Home</md-nav-item>
+    <md-nav-item md-nav-click="goto('orders')" name="orders" ui-sref="orders">Orders</md-nav-item>
+  </md-nav-bar>
   <ui-view></ui-view>
   <script src="js/libs.js"></script>
   <script src="js/app.js"></script>

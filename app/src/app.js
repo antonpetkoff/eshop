@@ -1,5 +1,5 @@
 angular.module('eshop', ['ngMaterial', 'ui.router'])
-  .config(($mdIconProvider, $mdThemingProvider, $stateProvider) => {
+  .config(($mdIconProvider, $mdThemingProvider, $stateProvider, $urlRouterProvider) => {
     // Register the user `avatar` icons
     $mdIconProvider
       .defaultIconSet("./assets/svg/avatars.svg", 128)
@@ -14,24 +14,23 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
       .primaryPalette('brown')
       .accentPalette('red');
 
-    var helloState = {
-      name: 'hello',
-      url: '/hello',
-      template: '<h3>hello world!</h3>'
-    };
-
-    var aboutState = {
-      name: 'about',
-      url: '/about',
-      template: '<h3>Its the UI-Router hello world app!</h3>'
-    };
-
     $stateProvider
-      .state(helloState)
-      .state(aboutState)
       .state({
         name: 'home',
         url: '/home',
         component: 'esHome'
+      })
+      .state({
+        name: 'login',
+        url: '/login',
+        component: 'esLogin'
+      })
+      .state({
+        name: 'orders',
+        url: '/orders',
+        component: 'esOrders'
       });
+
+    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.when('/', '/login');
   });
