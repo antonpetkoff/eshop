@@ -21,10 +21,10 @@ class HomeController {
   }
 
   /**
-   * Hide or Show the 'left' sideNav area
+   * Hide or Show the 'filter' sideNav area
    */
-  toggleUsersList() {
-    this.$mdSidenav('left').toggle();
+  toggleFilter() {
+    this.$mdSidenav('filter').toggle();
   }
 
   /**

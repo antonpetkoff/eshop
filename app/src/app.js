@@ -8,7 +8,8 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
       .icon("google_plus", "./assets/svg/google_plus.svg", 24)
       .icon("hangouts", "./assets/svg/hangouts.svg", 24)
       .icon("twitter", "./assets/svg/twitter.svg", 24)
-      .icon("phone", "./assets/svg/phone.svg", 24);
+      .icon("phone", "./assets/svg/phone.svg", 24)
+      .icon("magnifier", "./assets/svg/magnifier.svg", 24);
 
     $mdThemingProvider.theme('default')
       .primaryPalette('blue', {
