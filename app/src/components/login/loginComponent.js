@@ -2,7 +2,7 @@
 
 class LoginController {
   constructor() {
-
+    this.items = [1, 2, 3, 42];
   }
 }
 
