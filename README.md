@@ -1,5 +1,7 @@
 # e-shop setup
 
+0) install latest Node.js LTS
+
 1) `sudo npm install -g gulp-cli live-server eslint` to install tools
 
 2) `npm install` to install project dependencies
