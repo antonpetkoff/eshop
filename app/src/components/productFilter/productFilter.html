@@ -9,23 +9,29 @@
   </md-checkbox>
 </div>
 
-<div class="categories panel" layout="column">
-  <md-checkbox
-    ng-repeat="category in $ctrl.categories"
-    ng-model="category.selected"
-    aria-label="{{category.label}}">
-    {{category.label}}
-  </md-checkbox>
+<div class="categories">
+  <h3 class="panel-header">Категории</h3>
+  <div class="panel-content" layout="column">
+    <md-checkbox
+      ng-repeat="category in $ctrl.categories"
+      ng-model="category.selected"
+      aria-label="{{category.label}}">
+      {{category.label}}
+    </md-checkbox>
+  </div>
 </div>
 
-<div class="price panel" layout="row">
-  от
-  <md-input-container>
-    <input type="number" ng-model="$ctrl.price.lowerBound">
-  </md-input-container>
-  до
-  <md-input-container>
-    <input type="number" ng-model="$ctrl.price.upperBound">
-  </md-input-container>
-  лв.
+<div class="price">
+  <h3 class="panel-header">Цена</h3>
+  <div class="panel-content" layout="row">
+    от
+    <md-input-container>
+      <input type="number" ng-model="$ctrl.price.lowerBound">
+    </md-input-container>
+    до
+    <md-input-container>
+      <input type="number" ng-model="$ctrl.price.upperBound">
+    </md-input-container>
+    лв.
+  </div>
 </div>

@@ -4,16 +4,20 @@ es-product-filter .header {
   margin-top: 0;
 }
 
-es-product-filter .panel {
+es-product-filter .panel-header {
+  margin: 5px;
+}
+
+es-product-filter .panel-content {
   overflow-y: auto;
   height: 120px;
   padding: 10px;
   border: 2px solid gray;
   border-radius: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-es-product-filter .price {
+es-product-filter .price > .panel-content {
   height: 60px;
   line-height: 30px;
   overflow: hidden;
