@@ -1,6 +1,3 @@
-es-product-filter {
-  padding: 10px;
-}
 
 es-product-filter .panel {
   overflow-y: auto;
@@ -12,7 +9,9 @@ es-product-filter .panel {
 }
 
 es-product-filter .price {
+  height: 60px;
   line-height: 30px;
+  overflow: hidden;
 }
 
 es-product-filter .price md-input-container {

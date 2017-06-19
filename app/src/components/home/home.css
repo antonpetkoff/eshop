@@ -1,3 +1,8 @@
-.hello-world {
-    display: block;
+button#filter {
+    position: absolute;
+    z-index: 1;
+}
+
+es-home md-sidenav {
+  padding: 10px;
 }
