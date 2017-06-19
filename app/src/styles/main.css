@@ -55,5 +55,9 @@ span.name {
 }
 
 ui-view {
-  height: calc(100% - 80px);
+  height: calc(100% - 80px);  /* 80px = top navbar */
+}
+
+ui-view > * > * {
+  height: 100%;
 }

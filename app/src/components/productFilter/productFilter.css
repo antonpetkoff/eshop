@@ -1,4 +1,9 @@
 
+es-product-filter .header {
+  text-align: center;
+  margin-top: 0;
+}
+
 es-product-filter .panel {
   overflow-y: auto;
   height: 120px;
