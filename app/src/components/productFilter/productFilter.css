@@ -1,0 +1,20 @@
+es-product-filter {
+  padding: 10px;
+}
+
+es-product-filter .panel {
+  overflow-y: auto;
+  height: 120px;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+es-product-filter .price {
+  line-height: 30px;
+}
+
+es-product-filter .price md-input-container {
+  margin: 0;
+}

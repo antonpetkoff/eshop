@@ -1,0 +1,29 @@
+<div class="special-filters" layout="column">
+  <md-checkbox
+    ng-repeat="specialFilter in $ctrl.specialFilters"
+    ng-model="specialFilter.selected"
+    aria-label="{{specialFilter.label}}">
+    {{specialFilter.label}}
+  </md-checkbox>
+</div>
+
+<div class="categories panel" layout="column">
+  <md-checkbox
+    ng-repeat="category in $ctrl.categories"
+    ng-model="category.selected"
+    aria-label="{{category.label}}">
+    {{category.label}}
+  </md-checkbox>
+</div>
+
+<div class="price panel" layout="row">
+  от
+  <md-input-container>
+    <input type="number" ng-model="$ctrl.price.lowerBound">
+  </md-input-container>
+  до
+  <md-input-container>
+    <input type="number" ng-model="$ctrl.price.upperBound">
+  </md-input-container>
+  лв.
+</div>

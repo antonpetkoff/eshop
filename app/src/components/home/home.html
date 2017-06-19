@@ -1,6 +1,6 @@
 <!-- Container #1 (see wireframe) -->
 <md-toolbar layout="row" class="md-toolbar-tools">
-  <md-button class="menu md-icon-button" hide-gt-sm ng-click="$ctrl.toggleList()"
+  <md-button class="menu md-icon-button" hide-gt-sm ng-click="$ctrl.toggleFilter()"
              aria-label="Show User List">
     <md-icon md-svg-icon="menu"></md-icon>
   </md-button>
@@ -12,13 +12,8 @@
 
   <!-- Container #3 -->
   <md-sidenav class="md-whiteframe-4dp" md-is-locked-open="$mdMedia('gt-sm')"
-              md-component-id="list" ng-click="$ctrl.toggleList()">
-    <!-- Custom UsersList component -->
-    <es-users-list
-        users="$ctrl.users"
-        selected="$ctrl.selected"
-        on-selected="$ctrl.selectUser(user)">
-    </es-users-list>
+              md-component-id="filter" ng-click="$ctrl.toggleFilter()">
+    <es-product-filter></es-product-filter>
   </md-sidenav>
 
   <!-- Container #4 -->
