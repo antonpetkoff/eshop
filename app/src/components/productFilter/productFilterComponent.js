@@ -46,6 +46,32 @@ class ProductFilterController {
       lowerBound: 0,
       upperBound: 1000
     };
+
+    this.manufacturers = [{
+      id: 'HP',
+      label: 'HP',
+      selected: false
+    }, {
+      id: 'Lenovo',
+      label: 'Lenovo',
+      selected: false
+    }, {
+      id: 'Apple',
+      label: 'Apple',
+      selected: false
+    }, {
+      id: 'Samsung',
+      label: 'Samsung',
+      selected: false
+    }, {
+      id: 'ASUS',
+      label: 'ASUS',
+      selected: false
+    }, {
+      id: 'LG',
+      label: 'LG',
+      selected: false
+    }];
   }
 }
 

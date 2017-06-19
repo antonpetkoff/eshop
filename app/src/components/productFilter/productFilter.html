@@ -26,12 +26,24 @@
   <div class="panel-content" layout="row">
     от
     <md-input-container>
-      <input type="number" ng-model="$ctrl.price.lowerBound">
+      <input type="number" ng-model="$ctrl.price.lowerBound" aria-label="минимална цена">
     </md-input-container>
     до
     <md-input-container>
-      <input type="number" ng-model="$ctrl.price.upperBound">
+      <input type="number" ng-model="$ctrl.price.upperBound" aria-label="максимална цена">
     </md-input-container>
     лв.
+  </div>
+</div>
+
+<div class="manufacturers">
+  <h3 class="panel-header">Производител</h3>
+  <div class="panel-content" layout="column">
+    <md-checkbox
+      ng-repeat="manufacturer in $ctrl.manufacturers | orderBy: 'label'"
+      ng-model="manufacturer.selected"
+      aria-label="{{manufacturer.label}}">
+      {{manufacturer.label}}
+    </md-checkbox>
   </div>
 </div>
