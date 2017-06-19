@@ -1,0 +1,5 @@
+es-product-item .container {
+  border-radius: 5px;
+  border: 2px solid gray;
+  margin: 0 10px 10px 0;
+}
