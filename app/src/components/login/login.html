@@ -1,2 +1,25 @@
-<div>Login</div>
-<div ng-repeat="item in $ctrl.items">{{item}}</div>
+<div id='login-form' layout="row">
+	<div id='login-fields'>
+		<div>
+			 <md-input-container>
+		        <label class="text">Username</label>
+		        <input ng-model="user.title">
+		     </md-input-container>
+
+		     <md-input-container>
+		        <label class="text">Password</label>
+		        <input ng-model="user.email" type="email">
+	      	</md-input-container>
+		</div>
+		<md-checkbox aria-label="Checkbox 1">Remember me</md-checkbox></br>
+		<md-button class="md-raised md-primary">Login</md-button>
+	</div>
+	<div id='alt-sign'>
+		<section layout="column" layout-wrap>
+      		<div>
+	      		<md-button><md-icon md-svg-icon="../../../assets/svg/fb.svg"></md-icon> Sign in with Facebook</md-button>
+			    <md-button><md-icon md-svg-src="../../../assets/svg/gmail.svg"></md-icon> Sign in with Gmail</md-button>
+	    	</div>
+	    </section>
+	</div>
+</div>

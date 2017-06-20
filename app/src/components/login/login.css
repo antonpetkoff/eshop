@@ -1,0 +1,31 @@
+#login-form {
+  position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    height: 35%;
+    background-color: gray;
+    border: 1;
+    border-style: solid;
+}
+
+.text {
+	color: black;
+}
+
+#login-fields {
+	width: 40%;
+	margin: 5%;
+	color: black;
+   /*background-color: green;*/
+}
+
+#alt-sign {
+	width: 40%;
+	margin: 5%;
+	color: black;
+   /*background-color: red;*/
+}
