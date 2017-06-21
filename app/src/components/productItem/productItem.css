@@ -1,5 +1,13 @@
-es-product-item .container {
+es-product-item {
   border-radius: 5px;
   border: 2px solid gray;
   margin: 0 10px 10px 0;
+}
+
+es-product-item .image {
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

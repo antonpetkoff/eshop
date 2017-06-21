@@ -6,10 +6,3 @@ button#filter {
 es-home md-sidenav {
   padding: 10px;
 }
-
-#product-items {
-  overflow-y: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
