@@ -1,25 +1,30 @@
 <div id='login-form' layout="row">
 	<div id='login-fields'>
 		<div>
-			 <md-input-container>
-		        <label class="text">Username</label>
+			 <md-input-container class="container">
+		        <md-icon md-svg-icon="../../../assets/svg/user.svg"></md-icon>
+		        <label class="text">Потребителско име</label>
 		        <input ng-model="user.title">
 		     </md-input-container>
 
-		     <md-input-container>
-		        <label class="text">Password</label>
+		     <md-input-container class="container">
+		     	<md-icon md-svg-icon="../../../assets/svg/lock.svg"></md-icon>
+		        <label class="text">Парола</label>
 		        <input ng-model="user.email" type="email">
 	      	</md-input-container>
 		</div>
-		<md-checkbox aria-label="Checkbox 1">Remember me</md-checkbox></br>
-		<md-button class="md-raised md-primary">Login</md-button>
+		<md-checkbox aria-label="Checkbox 1">Запомни ме</md-checkbox></br>
+		<md-button class="md-raised">Влез</md-button>
+	    <md-button class="md-raised" md-nav-click="goto('register')" ui-sref="register">Регистрация</md-button>
 	</div>
 	<div id='alt-sign'>
-		<section layout="column" layout-wrap>
+		<section layout="column">
       		<div>
-	      		<md-button><md-icon md-svg-icon="../../../assets/svg/fb.svg"></md-icon> Sign in with Facebook</md-button>
-			    <md-button><md-icon md-svg-src="../../../assets/svg/gmail.svg"></md-icon> Sign in with Gmail</md-button>
+	      		<md-button><md-icon md-svg-icon="../../../assets/svg/fb.svg"></md-icon> Влез с Facebook</md-button></br>
+			    <md-button><md-icon md-svg-src="../../../assets/svg/gmail.svg"></md-icon> Влез с Gmail</md-button>
 	    	</div>
+
+		<!-- <md-nav-item md-nav-click="goto('home')" name="login" Register</md-nav-item> -->
 	    </section>
 	</div>
 </div>

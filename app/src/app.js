@@ -34,7 +34,12 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
         name: 'orders',
         url: '/orders',
         component: 'esOrders'
-      });
+      })
+      .state({
+        name: 'register',
+        url: '/register',
+        component: 'esRegister'
+       });
 
     $urlRouterProvider.otherwise('/');
     $urlRouterProvider.when('/', '/login');

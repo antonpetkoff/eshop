@@ -5,8 +5,8 @@
     left: 0;
     right: 0;
     margin: auto;
-    width: 50%;
-    height: 35%;
+    width: 600px; /*50%*/
+    height: 290px; /*40%*/
     background-color: gray;
     border: 1;
     border-style: solid;
@@ -28,4 +28,8 @@
 	margin: 5%;
 	color: black;
    /*background-color: red;*/
+}
+
+.container {
+	margin-top: 0;
 }

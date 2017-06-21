@@ -1,0 +1,37 @@
+<div id='register-form'>
+	<div id='register-fields'>
+		<div>
+			 <md-input-container class="container">
+		        <md-icon md-svg-icon="../../../assets/svg/user.svg"></md-icon>
+		        <label class="text">Потребителско име</label>
+		        <input ng-model="user.title"><!--bez tqh se chupi css -->
+		     </md-input-container>
+
+		     <md-input-container class="container">
+		     	<md-icon md-svg-icon="../../../assets/svg/info.svg"></md-icon>
+		        <label class="text">Име и фамилия</label>
+		        <input ng-model="user.name"><!--bez tqh se chupi css -->
+		     </md-input-container>
+
+		     <md-input-container class="container">
+		     	<md-icon md-svg-icon="../../../assets/svg/lock.svg"></md-icon>
+		        <label class="text">Парола</label>
+		        <input ng-model="user.pass" type="pass"> <!--bez tqh se chupi css -->
+	      	</md-input-container>
+
+	      	<md-input-container class="container">
+		     	<md-icon md-svg-icon="../../../assets/svg/lock.svg"></md-icon>
+		        <label class="text">Парола отново</label>
+		        <input ng-model="user.pass_repeat" type="pass"><!--bez tqh se chupi css -->
+	      	</md-input-container>
+
+	      	<md-input-container class="container">
+		     	<md-icon md-svg-icon="../../../assets/svg/mail.svg"></md-icon>
+		        <label class="text">Имейл</label>
+		        <input ng-model="user.email" type="email"><!--bez tqh se chupi css -->
+	      	</md-input-container>
+		</div>
+		<md-checkbox aria-label="Checkbox 1">Искам да получавам известия по имейл</md-checkbox></br>
+		<md-button class="md-raised">Регистрация</md-button>
+	</div>	
+</div>
