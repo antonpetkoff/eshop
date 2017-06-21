@@ -1,5 +1,6 @@
 {
     "globals": {
+        "_": false,
         "angular": false,
         "describe": false,
         "it": false,

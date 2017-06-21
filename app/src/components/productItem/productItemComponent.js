@@ -1,10 +1,6 @@
 'use strict';
 
 class ProductItemController {
-  constructor() {
-    console.log(this);
-  }
-
   get imageUrl() {
     return `url('${this.item.image}')`;
   }
