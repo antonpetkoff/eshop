@@ -28,7 +28,7 @@ module.exports = {
   },
   assets: {
     src: [
-      'app/assets/**/*.{svg,png,jpg}'
+      'app/assets/**/*'
     ],
     dest: 'build/assets'
   },

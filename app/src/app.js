@@ -9,7 +9,9 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
       .icon("hangouts", "./assets/svg/hangouts.svg", 24)
       .icon("twitter", "./assets/svg/twitter.svg", 24)
       .icon("phone", "./assets/svg/phone.svg", 24)
-      .icon("magnifier", "./assets/svg/magnifier.svg", 24);
+      .icon("magnifier", "./assets/svg/magnifier.svg", 24)
+      .icon("solid-star", "./assets/svg/star-solid.svg", 240)
+      .icon("empty-star", "./assets/svg/star-empty.svg", 24);
 
     $mdThemingProvider.theme('default')
       .primaryPalette('blue', {
