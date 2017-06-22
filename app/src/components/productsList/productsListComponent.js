@@ -1,8 +1,9 @@
 'use strict';
 
 class ProductsListController {
-  constructor(ProductsResource) {
+  constructor(ProductsResource, ProductsFilter) {
     this.products = ProductsResource.products;
+    this.filterCriteria = ProductsFilter.criteria;
   }
 }
 
