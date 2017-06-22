@@ -5,7 +5,7 @@ class ProductsFilter {
     this.criteria = {
       price: {
         lower: 0,
-        upper: Number.MAX_VALUE
+        upper: 1000
       },
       properties: []
     };

@@ -2,7 +2,7 @@
 
 class ProductsResource {
   constructor() {
-    const prices = _.times(20, () => _.random(100, 5000));
+    const prices = _.times(50, () => _.random(100, 5000));
     const images = ['/assets/laptop-1.jpg'];
     const labels = ['ASUS ProBook'];
     const properties = ['16 GB RAM', '256 GB SDD', 'Intel Core i7', 'Full HD IPS'];

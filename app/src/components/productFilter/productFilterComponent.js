@@ -1,7 +1,9 @@
 'use strict';
 
 class ProductFilterController {
-  constructor() {
+  constructor(ProductsFilter) {
+    this.filter = ProductsFilter.criteria;
+
     this.specialFilters = [{
       id: 'all',
       label: 'Всички',
