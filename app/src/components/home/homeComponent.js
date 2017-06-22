@@ -1,23 +1,11 @@
 /**
  * Main Home Controller for the Angular Material Starter App
- * @param UsersDataService
  * @param $mdSidenav
  * @constructor
  */
 class HomeController {
-  constructor($scope, UsersDataService, $mdSidenav) {
-    this.$scope = $scope;
-    this.UsersDataService = UsersDataService;
+  constructor($mdSidenav) {
     this.$mdSidenav = $mdSidenav;
-
-    this.selected     = null;
-    this.users        = [ ];
-
-    this.UsersDataService.loadAllUsers()
-      .then(users => {
-        this.users = [].concat(users);
-        this.selected = users[0];
-      });
   }
 
   /**
@@ -25,14 +13,6 @@ class HomeController {
    */
   toggleFilter() {
     this.$mdSidenav('filter').toggle();
-  }
-
-  /**
-   * Select the current avatars
-   * @param menuId
-   */
-  selectUser(user) {
-    this.selected = angular.isNumber(user) ? this.$scope.users[user] : user;
   }
 }
 
