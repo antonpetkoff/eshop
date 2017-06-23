@@ -2,5 +2,6 @@
   md-colors="{background:'primary'}"
   ng-repeat="item in $ctrl.products | productFilter: $ctrl.filterCriteria"
   item="item"
-  ui-sref="product({id: item.id})">
+  ui-sref="product({id: item.id})"
+  ui-sref-opts="{reload: true, notify: true}">
 </es-product-item>

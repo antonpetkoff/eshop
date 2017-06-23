@@ -42,6 +42,7 @@ span.name {
 }
 
 .toolbar {
+  padding: 8px;
   justify-content: space-around;
   align-items: center;
 }
@@ -52,7 +53,7 @@ span.name {
 }
 
 ui-view {
-  height: calc(100% - 80px);  /* 80px = top navbar */
+  height: calc(100% - 96px);  /* 80px = top navbar */
 }
 
 ui-view > * > * {
