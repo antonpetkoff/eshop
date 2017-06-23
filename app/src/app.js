@@ -43,9 +43,9 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
         component: 'esLogin'
       })
       .state({
-        name: 'orders',
-        url: '/orders',
-        component: 'esOrders'
+        name: 'cart',
+        url: '/cart',
+        component: 'esCart'
       })
       .state({
         name: 'register',
