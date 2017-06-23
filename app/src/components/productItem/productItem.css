@@ -1,7 +1,16 @@
 es-product-item {
-  border-radius: 5px;
+  border-radius: 10px;
   border: 2px solid gray;
   margin: 0 10px 10px 0;
+  padding: 10px;
+  font-family: 'Roboto';
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+es-product-item:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
 }
 
 es-product-item .image {
@@ -10,4 +19,25 @@ es-product-item .image {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 5px;
+}
+
+es-product-item .label {
+  width: 100%;
+}
+
+es-product-item .price {
+  font-weight: 600;
+}
+
+es-product-item .stars {
+  margin: 5px 0 5px 0;
+}
+
+es-product-item .properties {
+  margin-top: 10px;
+}
+
+es-product-item .properties .property {
+  margin: 4px;
 }

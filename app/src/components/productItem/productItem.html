@@ -1,7 +1,8 @@
 <div class="image" ng-style="{'background-image': $ctrl.imageUrl}"></div>
-<es-stars count="$ctrl.item.stars"></es-stars>
-<div class="label">{{$ctrl.item.label}}</div>
-<div class="price">{{$ctrl.item.price}}</div>
+<es-stars class="stars" count="$ctrl.item.stars"></es-stars>
+<h3 class="label">{{$ctrl.item.label}}</h3>
+<div class="price">Цена: {{$ctrl.item.price}} лв</div>
 <div class="properties">
-  <div ng-repeat="property in $ctrl.item.properties">{{property}}</div>
+  Характеристики:
+  <div class="property" ng-repeat="property in $ctrl.item.properties">&bull; {{property}}</div>
 </div>

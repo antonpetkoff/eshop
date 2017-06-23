@@ -3,4 +3,5 @@ es-products-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 20px 10px 20px 10px;
 }
