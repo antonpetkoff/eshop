@@ -5,6 +5,10 @@ es-products-list .order {
   right: 70px;
 }
 
+es-products-list .order label {
+  font-size: 16px;
+}
+
 es-products-list .items {
   position: relative;
   z-index: 1;
