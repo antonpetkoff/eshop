@@ -43,6 +43,7 @@ span.name {
 
 .toolbar {
   justify-content: space-around;
+  align-items: center;
 }
 
 .search-bar {
@@ -56,4 +57,15 @@ ui-view {
 
 ui-view > * > * {
   height: 100%;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background-image: url('/assets/emoni-logo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  cursor: pointer;
 }

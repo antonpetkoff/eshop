@@ -13,6 +13,8 @@
 
 <body ng-cloak layout="column" ng-app="eshop" ng-controller="AppController as $ctrl">
   <md-toolbar class="toolbar" layout="row" layout-padding>
+    <div class="logo" ui-sref="home"></div>
+
     <md-input-container class="search-bar">
        <md-icon md-svg-icon="magnifier"></md-icon>
        <input ng-model="$ctrl.search" placeholder="Търсене">
@@ -20,9 +22,14 @@
 
     <md-nav-bar md-selected-nav-item="$ctrl.currentNavItem" nav-bar-aria-label="navigation links">
       <md-nav-item md-nav-click="goto('login')" name="login" ui-sref="login">Login</md-nav-item>
-      <md-nav-item md-nav-click="goto('register')" name="register" ui-sref="register">Register</md-nav-item>
-      <md-nav-item md-nav-click="goto('home')" name="home" ui-sref="home">Home</md-nav-item>
-      <md-nav-item md-nav-click="goto('orders')" name="orders" ui-sref="orders">Orders</md-nav-item>
+      <md-nav-item md-nav-click="goto('register')" name="register" ui-sref="register">
+        <md-icon md-svg-icon="user"></md-icon>
+        Регистрация
+      </md-nav-item>
+      <md-nav-item md-nav-click="goto('orders')" name="orders" ui-sref="orders">
+        <md-icon md-svg-icon="cart"></md-icon>
+        Моята количка
+      </md-nav-item>
     </md-nav-bar>
   </md-toolbar>
   <ui-view></ui-view>

@@ -11,7 +11,9 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
       .icon("phone", "./assets/svg/phone.svg", 24)
       .icon("magnifier", "./assets/svg/magnifier.svg", 24)
       .icon("solid-star", "./assets/svg/star-solid.svg", 240)
-      .icon("empty-star", "./assets/svg/star-empty.svg", 24);
+      .icon("empty-star", "./assets/svg/star-empty.svg", 24)
+      .icon("cart", "./assets/svg/cart.svg", 512)
+      .icon("user", "./assets/svg/user-shape.svg", 512);
 
     $mdThemingProvider.theme('default')
       .primaryPalette('blue', {
