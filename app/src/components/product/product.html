@@ -14,8 +14,11 @@
 
     <div class="main">
       <h3 class="label">{{$ctrl.product.label}}</h3>
-      <es-stars class="stars" count="$ctrl.product.stars"></es-stars>
-      <div class="favorite">
+      <div class="rating">
+        Оценка
+        <es-stars class="stars" count="$ctrl.product.stars"></es-stars>
+      </div>
+      <div class="favorite" ng-click="$ctrl.product.favorite = !$ctrl.product.favorite">
         В любими
         <md-icon ng-if="$ctrl.product.favorite" md-svg-icon="heart-solid"></md-icon>
         <md-icon ng-if="!$ctrl.product.favorite" md-svg-icon="heart-empty"></md-icon>
@@ -24,8 +27,8 @@
         Добави в количката
         <md-icon md-svg-icon="cart"></md-icon>
       </div>
-      <div class="price">Цена: {{$ctrl.product.price}} лв</div>
-      <div class="warrany">
+      <div class="price">Цена: {{$ctrl.product.price}} лева</div>
+      <div class="warranty">
         Гаранция: 24 месеца
         <md-icon md-svg-icon="shield"></md-icon>
       </div>

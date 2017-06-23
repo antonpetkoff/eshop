@@ -24,6 +24,22 @@ es-product .gallery .rest img {
   height: 10vw;
 }
 
+es-product .main > * {
+  margin: 20px;
+}
+
+es-product .main es-stars {
+  display: inline-block;
+}
+
+es-product .main .favorite {
+  cursor: pointer;
+}
+
+es-product .main .cart {
+  cursor: pointer;
+}
+
 es-product .bottom {
   display: flex;
   justify-content: center;
