@@ -1,11 +1,15 @@
 'use strict';
 
 class AppController {
-  constructor($state) {
+  constructor($state, $scope) {
     this.$state = $state;
-    console.log($state, $state.$current);
-    // TODO: make currentNavItem dynamic
-    this.currentNavItem = 'login';
+    this.$scope = $scope;
+  }
+
+  $onInit() {
+    this.$scope.$watch('$ctrl.$state.$current.name', (name) => {
+      this.currentNavItem = name;
+    });
   }
 }
 

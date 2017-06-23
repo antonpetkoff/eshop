@@ -28,6 +28,11 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
         component: 'esHome'
       })
       .state({
+        name: 'product',
+        url: 'product/:id',
+        component: 'esProduct'
+      })
+      .state({
         name: 'login',
         url: '/login',
         component: 'esLogin'
@@ -41,8 +46,8 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
         name: 'register',
         url: '/register',
         component: 'esRegister'
-       });
+      });
 
-    $urlRouterProvider.otherwise('/');
-    $urlRouterProvider.when('/', '/login');
+    // $urlRouterProvider.otherwise('/home'); // TODO: why did this mess up?
+    $urlRouterProvider.when('/', '/home');
   });
