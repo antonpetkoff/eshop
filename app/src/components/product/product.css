@@ -1,4 +1,26 @@
-es-product img {
-  width: 200px;
-  height: 200px;
+
+es-product .top {
+  justify-content: space-around;
+}
+
+es-product .gallery img {
+  border-radius: 8px;
+  margin: 10px;
+}
+
+es-product .gallery img.main {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+es-product .gallery .rest img {
+  width: 100px;
+  height: 100px;
+}
+
+es-product .bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
