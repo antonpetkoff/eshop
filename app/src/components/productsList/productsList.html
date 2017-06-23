@@ -1,6 +1,19 @@
-<es-product-item
-  md-colors="{background:'primary'}"
-  ng-repeat="item in $ctrl.products | productFilter: $ctrl.filterCriteria"
-  item="item"
-  ui-sref="product({id: item.id})">
-</es-product-item>
+<div class="order">
+  <md-input-container>
+    <label>Наредба</label>
+    <md-select ng-model="$ctrl.order">
+      <md-option ng-repeat="order in $ctrl.orders" ng-value="order.label">
+        {{order.label}}
+      </md-option>
+    </md-select>
+  </md-input-container>
+</div>
+
+<div class="items">
+  <es-product-item
+    md-colors="{background:'primary'}"
+    ng-repeat="item in $ctrl.products | productFilter: $ctrl.filterCriteria | orderBy: $ctrl.order.key"
+    item="item"
+    ui-sref="product({id: item.id})">
+  </es-product-item>
+</div>
