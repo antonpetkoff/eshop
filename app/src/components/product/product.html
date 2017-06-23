@@ -1,4 +1,4 @@
-<div class="container" layout="column">
+<div class="container">
 
   <div class="top" layout="row">
     <div class="gallery" layout="row">
@@ -15,14 +15,27 @@
     <div class="main">
       <h3 class="label">{{$ctrl.product.label}}</h3>
       <es-stars class="stars" count="$ctrl.product.stars"></es-stars>
+      <div class="favorite">
+        В любими
+        <md-icon ng-if="$ctrl.product.favorite" md-svg-icon="heart-solid"></md-icon>
+        <md-icon ng-if="!$ctrl.product.favorite" md-svg-icon="heart-empty"></md-icon>
+      </div>
+      <div class="cart">
+        Добави в количката
+        <md-icon md-svg-icon="cart"></md-icon>
+      </div>
       <div class="price">Цена: {{$ctrl.product.price}} лв</div>
+      <div class="warrany">
+        Гаранция: 24 месеца
+        <md-icon md-svg-icon="shield"></md-icon>
+      </div>
     </div>
   </div>
 
   <div class="bottom">
     <div class="properties">
-      Характеристики:
-      <div class="property" ng-repeat="property in $ctrl.product.properties">&bull; {{property}}</div>
+      <div class="header">Характеристики:</div>
+      <div class="property" ng-repeat="property in $ctrl.product.properties">&#x2713; {{property}}</div>
     </div>
   </div>
 </div>
