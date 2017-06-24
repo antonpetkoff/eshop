@@ -17,7 +17,8 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
       .icon("heart-solid", "./assets/svg/heart-solid.svg", 24)
       .icon("money", "./assets/svg/money.svg", 24)
       .icon("heart-empty", "./assets/svg/heart-empty.svg", 24)
-      .icon("shield", "./assets/svg/shield.svg", 24);
+      .icon("shield", "./assets/svg/shield.svg", 24)
+      .icon("credit-card", "./assets/svg/credit-card.svg", 24);
 
     $mdThemingProvider.theme('default')
       .primaryPalette('blue', {

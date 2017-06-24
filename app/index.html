@@ -29,13 +29,29 @@
         <md-icon md-svg-icon="user"></md-icon>
         Моят профил
       </md-nav-item>
-      <md-nav-item md-nav-click="goto('cart')" name="cart" ui-sref="cart">
-        <md-icon md-svg-icon="cart"></md-icon>
-        Моята количка
-      </md-nav-item>
-      <md-nav-item md-nav-click="goto('payment')" name="payment" ui-sref="payment">
-        <md-icon md-svg-icon="payment"></md-icon>
-        Плати поръчка
+
+      <md-nav-item md-nav-click="goto('cart')" name="cart">
+        <md-menu>
+          <div class="cart-menu-button" ng-click="$mdMenu.open()">
+            <md-icon md-svg-icon="cart"></md-icon>
+            Моята количка
+          </div>
+
+          <md-menu-content width="4">
+            <md-menu-item>
+              <md-button ui-sref="cart">
+                <md-icon md-svg-icon="cart"></md-icon>
+                Преглед
+              </md-button>
+            </md-menu-item>
+            <md-menu-item>
+              <md-button ui-sref="payment">
+                <md-icon md-svg-icon="credit-card"></md-icon>
+                Плащане
+              </md-button>
+            </md-menu-item>
+          </md-menu-content>
+        </md-menu>
       </md-nav-item>
     </md-nav-bar>
   </md-toolbar>

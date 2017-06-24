@@ -11,6 +11,10 @@ class AppController {
       this.currentNavItem = name;
     });
   }
+
+  openMenu($mdMenu, event) {
+    $mdMenu.open(event);
+  }
 }
 
 angular.module('eshop').controller('AppController', AppController);
