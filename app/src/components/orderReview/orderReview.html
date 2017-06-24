@@ -1,0 +1,20 @@
+<div  layout="row">
+    <div  id="products" >
+        <h2>Поръчки</h2>
+       <div layout="column" ng-cloak> 
+            <md-content flex layout-padding >
+                <es-order-item
+                    ng-repeat="item in $ctrl.orders"
+                    item="item"
+                    ui-sref="product({id: item.id})">
+                </es-order-item>
+            </md-content>
+        </div>
+    </div>
+    
+    
+    <div flex class="ads">
+        marketing
+    </div>
+  
+</div>

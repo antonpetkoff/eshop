@@ -58,6 +58,11 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
         name: 'payment',
         url: '/payment',
         component: 'esPayment'
+      }) 
+      .state({
+        name: 'orderReview',
+        url: '/orderReview',
+        component: 'esOrderReview'
       });
 
     // $urlRouterProvider.otherwise('/home'); // TODO: why did this mess up?
