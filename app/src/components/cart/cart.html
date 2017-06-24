@@ -1,8 +1,8 @@
 <div layout="row">
   <div class="left">
-    <div class="ads">Място за реклама</div>
+    <h3 class="ads">Място за реклама</h3>
 
-    <div class="breadcrumbs">Моята количка > Преглед</div>
+    <h3 class="breadcrumbs">Моята количка <b>></b> Преглед</h3>
 
     <div class="products">
       for each product
@@ -10,7 +10,14 @@
   </div>
 
   <div class="right">
-    <div class="overview">Бърз преглед</div>
+    <div class="overview" layout="column">
+      <h3>Бърз преглед</h3>
+      <h3 class="sum">Обща сума: 1600 лева</h3>
+      <md-button ui-sref="payment">
+        <md-icon md-svg-icon="credit-card"></md-icon>
+        Продължи към плащане
+      </md-button>
+    </div>
 
     <es-similar-items></es-similar-items>
   </div>

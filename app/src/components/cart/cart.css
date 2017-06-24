@@ -6,3 +6,41 @@ es-cart .left {
 es-cart .right {
   width: 30vw;
 }
+
+es-cart .ads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: calc(100% - 20px);
+  height: 100px;
+  margin: 10px;
+}
+
+es-cart .breadcrumbs {
+  margin: 10px;
+}
+
+es-cart .overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: calc(100% - 20px);
+  margin: 10px;
+}
+
+es-cart .overview .md-button {
+  display: inline-flex;
+  border: 2px solid gray;
+  border-radius: 3px;
+}
+
+es-cart es-similar-items {
+  display: block;
+  margin: 10px;
+}
