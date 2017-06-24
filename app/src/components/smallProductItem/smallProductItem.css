@@ -3,10 +3,10 @@ es-small-product-item {
   flex-direction: column;
   align-items: center;
 
-  width: 120px;
+  width: 15vw;
   border-radius: 10px;
   border: 2px solid gray;
-  margin: 0 10px 10px 0;
+  margin: 10px 0;
   padding: 7px;
   font-family: 'Roboto';
   cursor: pointer;
@@ -20,8 +20,8 @@ es-small-product-item:hover {
 
 es-small-product-item .image {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 12vw;
+  height: 12vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
