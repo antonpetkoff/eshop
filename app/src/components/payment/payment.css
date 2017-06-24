@@ -1,19 +1,23 @@
-#informations {
+es-payment .payment-container {
+    height: auto;
+}
+
+es-payment #informations {
     /*width: 80%;*/
     /*height: 45%;*/
     /*margin: 2.5%;*/
 }
 
-.margin {
-    margin: 2%;   
+es-payment .margin {
+    margin: 2%;
 }
 
-.border {
+es-payment .border {
     border: 1;
     border-style: solid;
 }
 
-#delivery-info {
+es-payment #delivery-info {
 /*    position: absolute;
     top: 110px;
     bottom: 0;
@@ -25,12 +29,12 @@
     margin-right: 0;
     margin-bottom: 0;
     background-color: gray;
- 
+
     display: inline-block;
     /*margin: 2.5%;*/
 }
 
-#payment-info {
+es-payment #payment-info {
 /*    position: absolute;
     top: 110px;
     bottom: 0;
@@ -48,7 +52,7 @@
     /*margin: 2.5%;*/
 }
 
-#summary {
+es-payment #summary {
     margin: 1.5%;
     margin-left: 0;
     width: 20%;
@@ -56,7 +60,7 @@
     background-color: gray;
 }
 
-.field {
+es-payment .field {
     display: block;
     /*margin: 5px;*/
     margin: 15px;
@@ -64,14 +68,14 @@
     /*background-color: green;*/
 }
 
-.payment-logo {
+es-payment .payment-logo {
    text-align: center;
    height: 10%;
    width: 10%;
    margin: 4% 2.5%;
  }
 
-.heading {
-    text-align: center; 
+es-payment .heading {
+    text-align: center;
     color: black;
 }
