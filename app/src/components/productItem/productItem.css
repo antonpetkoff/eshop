@@ -15,12 +15,22 @@ es-product-item:hover {
 }
 
 es-product-item .image {
+  position: relative;
   width: 120px;
   height: 120px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 5px;
+}
+
+es-product-item .image .favorite {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 2px;
+  background-color: rgb(13, 71, 161);
+  border-bottom-right-radius: 5px;
 }
 
 es-product-item .label {

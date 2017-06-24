@@ -15,7 +15,9 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
       .icon("cart", "./assets/svg/cart.svg", 24)
       .icon("user", "./assets/svg/user-shape.svg", 24)
       .icon("heart-solid", "./assets/svg/heart-solid.svg", 24)
-      .icon("money", "./assets/svg/money.svg", 24);
+      .icon("money", "./assets/svg/money.svg", 24)
+      .icon("heart-empty", "./assets/svg/heart-empty.svg", 24)
+      .icon("shield", "./assets/svg/shield.svg", 24);
 
     $mdThemingProvider.theme('default')
       .primaryPalette('blue', {
@@ -42,9 +44,9 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
         component: 'esLogin'
       })
       .state({
-        name: 'orders',
-        url: '/orders',
-        component: 'esOrders'
+        name: 'cart',
+        url: '/cart',
+        component: 'esCart'
       })
       .state({
         name: 'register',
