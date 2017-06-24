@@ -14,7 +14,8 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
       .icon("empty-star", "./assets/svg/star-empty.svg", 24)
       .icon("cart", "./assets/svg/cart.svg", 24)
       .icon("user", "./assets/svg/user-shape.svg", 24)
-      .icon("heart-solid", "./assets/svg/heart-solid.svg", 24);
+      .icon("heart-solid", "./assets/svg/heart-solid.svg", 24)
+      .icon("money", "./assets/svg/money.svg", 24);
 
     $mdThemingProvider.theme('default')
       .primaryPalette('blue', {
@@ -49,6 +50,11 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
         name: 'register',
         url: '/register',
         component: 'esRegister'
+      })
+      .state({
+        name: 'payment',
+        url: '/payment',
+        component: 'esPayment'
       });
 
     // $urlRouterProvider.otherwise('/home'); // TODO: why did this mess up?

@@ -1,0 +1,91 @@
+<div layout="row">
+    <div flex layout="column">
+        <div layout="row" id="informations">
+            <div flex id='delivery-info' class="margin border">
+                <h2 class="heading">Информация за доставка</h2>
+                <md-input-container class="field">
+                   <label class="text">Име</label>
+                   <input ng-model="user.title"><!--bez tqh se chupi css -->
+                </md-input-container>
+
+                <md-input-container class="field">
+                    <label class="text">Телефон</label>
+                    <input ng-model="user.name"><!--bez tqh se chupi css -->
+                </md-input-container>
+
+                <md-input-container class="field">
+                    <label class="text">Град</label>
+                    <input ng-model="user.pass" type="pass"> <!--bez tqh se chupi css -->
+                </md-input-container>
+
+                <md-input-container class="field">
+                    <label class="text">Улица</label>
+                    <input ng-model="user.pass_repeat" type="pass"><!--bez tqh se chupi css -->
+                </md-input-container>
+
+                <md-input-container class="field">
+                    <label class="text">Номер</label>
+                    <input ng-model="user.email" type="email"><!--bez tqh se chupi css -->
+                </md-input-container>
+
+                <md-input-container class="field">
+                    <label class="text">Блок</label>
+                    <input ng-model="user.pass_repeat" type="pass"><!--bez tqh se chupi css -->
+                </md-input-container>
+
+                <md-input-container class="field">
+                    <label class="text">Апартамент</label>
+                    <input ng-model="user.email" type="email"><!--bez tqh se chupi css -->
+                </md-input-container>        
+            </div>
+
+            <div flex id='payment-info' class="margin border">
+            <h2 class="heading">Платежна информация</h2> 
+                <div layout="row">
+                    <md-input-container style="margin-top: 5%; margin-right: 10%;">
+                        <md-select ng-model="payment" placeholder="Метод на плащане" style="margin-left: 15px;">
+                            <md-option ng-value="method" ng-repeat="method in $ctrl.methods">{{method}}</md-option>
+                        </md-select>
+                    </md-input-container>
+
+                    <img class="payment-logo" src="../../../assets/png/visa.png">
+                    <img class="payment-logo" src="../../../assets/png/mastercard2.png">
+                    <img class="payment-logo" src="../../../assets/png/paypal.png"> 
+                </div>
+
+                <md-input-container class="field">
+                   <label class="text">Име на картодържателя</label>
+                   <input ng-model="user.title"><!--bez tqh se chupi css -->
+                </md-input-container>
+
+                <md-input-container class="field">
+                    <label class="text">Номер на картата</label>
+                    <input ng-model="user.name"><!--bez tqh se chupi css -->
+                </md-input-container>        
+
+                <md-input-container class="field">
+                   <label class="text">Валидна до</label>
+                   <input ng-model="user.title"><!--bez tqh se chupi css -->
+                </md-input-container>
+
+                <md-input-container class="field">
+                    <label class="text">CVN номер</label>
+                    <input ng-model="user.name"><!--bez tqh se chupi css -->
+                </md-input-container>        
+            </div>
+        </div>
+
+        <md-content flex id="products" layout="column" class="margin border">
+            <div ng-repeat="product in $ctrl.products">{{product}}</div>
+        </md-content>
+    </div>
+    <div id="summary" layout="column" class="margin border">
+        <h1 class="heading">Обобщение</h1>
+        <h2 class="heading">Обща сума: {{$ctrl.totalSum()}}</h2> 
+        {{$ctrl.tee()}}
+        {{$ctrl.add()}}
+         <md-button class="md-raised md-warn" style="margin: 5% 30%;">Поръчай</md-button>    
+        <hr>
+        <h2 class="heading">Подобни продукти</h2>
+    </div>
+</div>
