@@ -2,6 +2,20 @@ es-payment .payment-container {
     height: auto;
 }
 
+es-payment .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-color: white;
+    border: 1;
+    border-style: solid;
+    background-color: gray;
+    width: calc(100% - 40px);
+    margin: 20px;
+}
+
 es-payment #informations {
     /*width: 80%;*/
     /*height: 45%;*/

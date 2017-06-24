@@ -75,9 +75,15 @@
             </div>
         </div>
 
-        <md-content flex id="products" layout="column" class="margin border">
-            <div ng-repeat="product in $ctrl.products">{{product}}</div>
-        </md-content>
+        <div class="products">
+            <h3>Продукти</h3>
+            <es-large-product-item
+                md-colors="{background:'primary'}"
+                ng-repeat="item in $ctrl.products"
+                item="item"
+                ui-sref="product({id: item.id})">
+            </es-large-product-item>
+        </div>
     </div>
     <div id="summary" layout="column" class="margin border">
         <h1 class="heading">Обобщение</h1>
