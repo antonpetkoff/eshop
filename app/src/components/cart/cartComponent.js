@@ -1,8 +1,8 @@
 'use strict';
 
 class CartController {
-  constructor() {
-
+  constructor(ProductsResource) {
+    this.items = ProductsResource.cart;
   }
 }
 

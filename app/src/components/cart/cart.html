@@ -5,7 +5,13 @@
     <h3 class="breadcrumbs">Моята количка <b>></b> Преглед</h3>
 
     <div class="products">
-      for each product
+      <h3>Продукти</h3>
+      <es-large-product-item
+        md-colors="{background:'primary'}"
+        ng-repeat="item in $ctrl.items"
+        item="item"
+        ui-sref="product({id: item.id})">
+      </es-large-product-item>
     </div>
   </div>
 

@@ -23,6 +23,18 @@ es-cart .breadcrumbs {
   margin: 10px;
 }
 
+es-cart .products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: calc(100% - 20px);
+  margin: 10px;
+}
+
 es-cart .overview {
   display: flex;
   justify-content: center;

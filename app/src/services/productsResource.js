@@ -19,7 +19,8 @@ class ProductsResource {
       manufacturer: _.sample(manufacturers)
     }));
 
-    this.similarItems = _.sampleSize(this.products, 5);
+    this.similarItems = _.sampleSize(this.products, 4);
+    this.cart = _.sampleSize(this.products, 5);
   }
 }
 
