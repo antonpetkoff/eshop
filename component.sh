@@ -21,11 +21,13 @@ touch "${COMPONENT_DIR}/${SMALL}.css"
 echo "'use strict';
 
 class ${COMPONENT}Controller {
+  constructor() {
 
+  }
 }
 
 angular.module('eshop').component('es${COMPONENT}', {
   templateUrl: 'templates/${SMALL}/${SMALL}.html',
   controller: ${COMPONENT}Controller
-});" > "${COMPONENT_DIR}/${COMPONENT}Component.js"
+});" > "${COMPONENT_DIR}/${SMALL}Component.js"
 

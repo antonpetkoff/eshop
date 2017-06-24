@@ -18,6 +18,8 @@ class ProductsResource {
       favorite: _.sample([true, false]),
       manufacturer: _.sample(manufacturers)
     }));
+
+    this.similarItems = _.sampleSize(this.products, 5);
   }
 }
 

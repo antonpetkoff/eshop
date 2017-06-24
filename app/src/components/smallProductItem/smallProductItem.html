@@ -1,0 +1,9 @@
+<div class="image" ng-style="{'background-image': $ctrl.imageUrl}">
+  <div class="favorite">
+    <md-icon ng-if="$ctrl.item.favorite" md-svg-icon="heart-solid"></md-icon>
+    <md-icon ng-if="!$ctrl.item.favorite" md-svg-icon="heart-empty"></md-icon>
+  </div>
+</div>
+<es-stars class="stars" count="$ctrl.item.stars"></es-stars>
+<div class="label">{{$ctrl.item.label}}</div>
+<div class="price">Цена: {{$ctrl.item.price}} лв</div>

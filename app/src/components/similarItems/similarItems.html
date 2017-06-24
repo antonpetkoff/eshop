@@ -1,0 +1,10 @@
+
+<div class="items">
+  <h3 class="header">Подобни продукти</h3>
+  <es-small-product-item
+    md-colors="{background:'primary'}"
+    ng-repeat="item in $ctrl.items"
+    item="item"
+    ui-sref="product({id: item.id})">
+  </es-small-product-item>
+</div>
