@@ -1,9 +1,13 @@
 'use strict';
 
 class OrderReviewController {
-  constructor(OrdersResource) {
-  	this.orders = OrdersResource.orders;
- 	}
+  constructor(OrdersResource, ProductsResource) {
+    this.orders = _.map(OrdersResource.orders, (order) => {
+      return _.merge(order, {
+        product: _.find(ProductsResource.products, {id: order.productId})
+      });
+    });
+  }
 }
 
 
