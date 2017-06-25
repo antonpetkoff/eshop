@@ -18,7 +18,7 @@ es-large-product-item .container {
 }
 
 es-large-product-item:hover {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1em rgba(255, 255, 255, 0.3);
   transform: scale(1.1);
 }
 
