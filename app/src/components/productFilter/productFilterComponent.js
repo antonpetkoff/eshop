@@ -7,7 +7,7 @@ class ProductFilterController {
     this.specialFilters = [{
       id: 'all',
       label: 'Всички',
-      selected: false
+      selected: true
     }, {
       id: 'sale',
       label: 'Промоция',
@@ -21,7 +21,7 @@ class ProductFilterController {
     this.categories = [{
       id: 'laptop',
       label: 'Лаптопи',
-      selected: false
+      selected: true
     }, {
       id: 'smart-phone',
       label: 'Смартфони',
@@ -52,7 +52,7 @@ class ProductFilterController {
     this.manufacturers = [{
       id: 'HP',
       label: 'HP',
-      selected: false
+      selected: true
     }, {
       id: 'Lenovo',
       label: 'Lenovo',
@@ -68,7 +68,7 @@ class ProductFilterController {
     }, {
       id: 'ASUS',
       label: 'ASUS',
-      selected: false
+      selected: true
     }, {
       id: 'LG',
       label: 'LG',
