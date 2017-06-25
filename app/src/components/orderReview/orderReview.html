@@ -2,9 +2,9 @@
     <div id="products" layout="column" >
         <h2>Поръчки</h2>
         <es-order-item
-            ng-repeat="item in $ctrl.orders"
-            item="item"
-            ui-sref="product({id: item.id})">
+            ng-repeat="order in $ctrl.orders"
+            item="order"
+            ui-sref="product({id: order.product.id})">
         </es-order-item>
     </div>
 

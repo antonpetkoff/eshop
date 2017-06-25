@@ -1,13 +1,12 @@
 es-order-item .payment-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
 	border: 2px solid gray;
 	border-radius: 10px;
 	width: 60vw;
-	padding: 25px;
+	padding: 15px;
   margin: 10px;
 
   cursor: pointer;
@@ -17,4 +16,8 @@ es-order-item .payment-container {
 es-order-item .payment-container:hover {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   transform: scale(1.08);
+}
+
+es-order-item .right {
+  margin-left: 10px;
 }
