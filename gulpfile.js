@@ -3,6 +3,7 @@ const config = require('./config');
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const del = require('del');
+const uglifyjs = require('gulp-uglifyjs');
 
 const ITEMS = ['libs', 'js', 'css', 'index', 'templates', 'assets'];
 
@@ -13,6 +14,10 @@ ITEMS.forEach(item => {
 
     if (filename) {
       stream = stream.pipe(concat(filename));
+    }
+
+    if (item === 'libs') {
+      stream = stream.pipe(uglifyjs({compress: true}));
     }
 
     return stream.pipe(gulp.dest(config[item].dest));
