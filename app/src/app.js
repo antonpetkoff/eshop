@@ -18,7 +18,10 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
       .icon("money", "./assets/svg/money.svg", 24)
       .icon("heart-empty", "./assets/svg/heart-empty.svg", 24)
       .icon("shield", "./assets/svg/shield.svg", 24)
-      .icon("credit-card", "./assets/svg/credit-card.svg", 24);
+      .icon("credit-card", "./assets/svg/credit-card.svg", 24)
+      .icon("choice", "./assets/svg/choice.svg", 24)
+      .icon("register", "./assets/svg/register.svg", 24)
+      .icon("login", "./assets/svg/login.svg", 24);
 
     $mdThemingProvider.theme('default')
       .primaryPalette('blue', {
@@ -58,7 +61,7 @@ angular.module('eshop', ['ngMaterial', 'ui.router'])
         name: 'payment',
         url: '/payment',
         component: 'esPayment'
-      }) 
+      })
       .state({
         name: 'orderReview',
         url: '/orderReview',
