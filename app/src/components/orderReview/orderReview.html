@@ -1,20 +1,15 @@
-<div  layout="row">
-    <div  id="products" >
+<div class="container" layout="row">
+    <div id="products" layout="column" >
         <h2>Поръчки</h2>
-       <div layout="column" ng-cloak> 
-            <md-content flex layout-padding >
-                <es-order-item
-                    ng-repeat="item in $ctrl.orders"
-                    item="item"
-                    ui-sref="product({id: item.id})">
-                </es-order-item>
-            </md-content>
-        </div>
+        <es-order-item
+            ng-repeat="item in $ctrl.orders"
+            item="item"
+            ui-sref="product({id: item.id})">
+        </es-order-item>
     </div>
-    
-    
-    <div flex class="ads">
-        marketing
-    </div>
-  
+
+    <h3 class="ads">
+        Място за реклама
+    </h3>
+
 </div>
